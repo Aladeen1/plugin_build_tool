@@ -904,8 +904,10 @@ def get_config(config='pb_tool.cfg'):
     Read the config file pb_tools.cfg and return it
     """
     if os.path.exists(config):
+        with open(config) as f:
+            content = os.path.expandvars(f.read())
         cfg = configparser.ConfigParser()
-        cfg.read(config)
+        cfg.read_string(content)
         #click.echo(cfg.sections())
         return cfg
     else:
