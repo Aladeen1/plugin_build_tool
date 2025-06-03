@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include pb_tool *.py
+recursive-include pb_tool/templates *.tmpl *.png
+recursive-include pb_tool/templates/dialog *
+recursive-include pb_tool/templates/minimal *
