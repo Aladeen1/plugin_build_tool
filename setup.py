@@ -44,7 +44,6 @@ setup(
     package_data={'pb_tool': ['templates/*.tmpl', 'templates/icon.png',
                               'templates/dialog/*.*', 'templates/minimal/*.*']},
     include_package_data=True,
-    py_modules=['pb_tool'],
     install_requires=[
         'Click',
         'Sphinx',
